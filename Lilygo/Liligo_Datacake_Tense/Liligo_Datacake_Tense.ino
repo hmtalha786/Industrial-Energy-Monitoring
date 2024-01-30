@@ -196,7 +196,7 @@ void Json_Packet_Sender() {
     StaticJsonBuffer<900> JSON_Packet;
     JsonObject& JSON_Entry = JSON_Packet.createObject();
     
-    JSON_Entry["device"] = "PROCHECK-TEST";
+    JSON_Entry["device"] = "Cotbus-TEST";
     JSON_Entry["UTS"] = Epoch_Time;
     JSON_Entry["SRS"] = "DOWN";
   
@@ -247,7 +247,7 @@ void Json_Packet_Sender() {
     StaticJsonBuffer<900> JSON_Packet;
     JsonObject& JSON_Entry = JSON_Packet.createObject();
   
-    JSON_Entry["device"] = "PROCHECK-TEST";
+    JSON_Entry["device"] = "Cotbus-TEST";
     JSON_Entry["UTS"] = Epoch_Time;
     JSON_Entry["SRS"] = "UP";
   

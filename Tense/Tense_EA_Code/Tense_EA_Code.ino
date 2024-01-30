@@ -161,7 +161,7 @@ void Json_Packet_Sender() {
   StaticJsonBuffer<900> JSON_Packet;
   JsonObject& JSON_Entry = JSON_Packet.createObject();
 
-  JSON_Entry["device"] = "PROCHECK-EA";
+  JSON_Entry["device"] = "Cotbus-EA";
   
   JSON_Entry["CSP"] = CSP;
   JSON_Entry["ASP"] = ASP;

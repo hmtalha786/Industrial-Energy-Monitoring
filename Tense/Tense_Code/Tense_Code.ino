@@ -302,7 +302,7 @@ void setup() {
 
   /* ----- Turn ON the bluetooth ----- */
   if (digitalRead(21) == HIGH) {
-    BLEDevice::init("ProCheck WiFi Gateway");
+    BLEDevice::init("Cotbus WiFi Gateway");
     BLEServer *pServer = BLEDevice::createServer();
     BLEService *pService = pServer->createService(SERVICE_UUID);
     BLECharacteristic *pCharacteristic = pService->createCharacteristic( CHARACTERISTIC_UUID, BLECharacteristic::PROPERTY_READ | BLECharacteristic::PROPERTY_WRITE );
@@ -344,7 +344,7 @@ void Json_Packet_Sender() {
   StaticJsonBuffer<900> JSON_Packet;
   JsonObject& JSON_Entry = JSON_Packet.createObject();
 
-  JSON_Entry["device"] = "PROCHECK-EA-2";
+  JSON_Entry["device"] = "Cotbus-EA-2";
 
   JSON_Entry["HCC"] = millis();
   JSON_Entry["UTS"] = Epoch_Time;

@@ -13,7 +13,7 @@ unsigned long timer = 10000;
 
 const char* ssid = "Sam";
 const char* pass = "samamaxx";
-static const char* connectionString = "HostName=procheck-prod.azure-devices.net;DeviceId=line-1_05vg3;SharedAccessKey=pPx9Db9dBbjJynNP8DcV2msnZCdtYcZmgJoQXsOeFGA=";
+static const char* connectionString = "HostName=Cotbus-prod.azure-devices.net;DeviceId=line-1_05vg3;SharedAccessKey=pPx9Db9dBbjJynNP8DcV2msnZCdtYcZmgJoQXsOeFGA=";
 
 static bool hasIoTHub = false;
 

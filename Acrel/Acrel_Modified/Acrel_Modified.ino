@@ -273,7 +273,7 @@ void Json_Packet_Sender() {
   StaticJsonBuffer<900> JSON_Packet;
   JsonObject& JSON_Entry = JSON_Packet.createObject();
 
-  JSON_Entry["device"] = "PROCHECK-TESTING";
+  JSON_Entry["device"] = "Cotbus-TESTING";
   JSON_Entry["UTS"] = Epoch_Time;
   JSON_Entry["STS"] = millis();
   JSON_Entry["OSF"] = OSF;
